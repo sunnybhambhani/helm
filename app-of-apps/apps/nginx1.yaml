@@ -18,3 +18,7 @@ spec:
           value: '30001'
       #valueFiles:
       #  - values.yaml
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

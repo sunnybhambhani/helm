@@ -16,3 +16,7 @@ spec:
       parameters:
         - name: service.nodePort
           value: '30003'
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
