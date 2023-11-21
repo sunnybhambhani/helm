@@ -1,0 +1,25 @@
+replicaCount: 1
+
+image:
+  name: nginx
+  version: latest
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 80
+  nodePort: 30004
+
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+autoscaling:
+  enabled: true
+  minReplicas: 1
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
