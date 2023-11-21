@@ -12,3 +12,7 @@ spec:
     path: nginx
     repoURL: https://github.com/sunnybhambhani/helm
     targetRevision: HEAD
+    helm:
+      parameters:
+        - name: service.nodePort
+          value: '30003'
