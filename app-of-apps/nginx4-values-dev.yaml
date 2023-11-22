@@ -1,0 +1,4 @@
+autoscaling:
+  minReplicas: 3
+service:
+  nodePort: 30004
