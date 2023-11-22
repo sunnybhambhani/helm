@@ -15,7 +15,7 @@ spec:
     helm:
       valueFiles:
       - $values/app-of-apps/nginx4-values-dev.yaml
-  - repoURL: 'ttps://github.com/sunnybhambhani/helm'
+  - repoURL: 'https://github.com/sunnybhambhani/helm'
     targetRevision: HEAD
     ref: values
   syncPolicy:
